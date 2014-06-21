@@ -1,0 +1,26 @@
+{
+    "name": "invit/plivo-bundle",
+    "description": "Mapper for the plivo sdk",
+    "authors": [
+        {
+            "name": "Toni Rudolf",
+            "email": "toni.rudolf@weekend4two.com"
+        }
+    ],
+    "minimum-stability": "dev",    
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/hashtd/plivo-php.git"
+        }
+    ],
+    "require": {
+        "php": ">= 5.3",
+        "plivo/plivo-php": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Invit\\PLivoBundle\\": "src/"
+        }
+    }
+}
