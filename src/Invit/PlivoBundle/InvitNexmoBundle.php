@@ -1,9 +1,9 @@
 <?php
 
-namespace Invit\NexmoBundle;
+namespace Invit\PlivoBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class InvitNexmoBundle extends Bundle
+class InvitPlivoBundle extends Bundle
 {
 }

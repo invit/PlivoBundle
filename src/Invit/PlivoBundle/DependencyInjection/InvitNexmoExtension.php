@@ -1,6 +1,6 @@
 <?php
 
-namespace Invit\NexmoBundle\DependencyInjection;
+namespace Invit\PlivoBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class InvitNexmoExtension extends Extension
+class InvitPlivoExtension extends Extension
 {
     /**
      * {@inheritDoc}
@@ -25,12 +25,12 @@ class InvitNexmoExtension extends Extension
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
 
-        if (isset($config['auth']['api_key'])) {
-            $container->setParameter('invit_nexmo.auth.api_key', $config['auth']['api_key']);
+        if (isset($config['auth']['auth_id'])) {
+            $container->setParameter('invit_plivo.auth.auth_id', $config['auth']['auth_id']);
         }
 
-        if (isset($config['auth']['api_secret'])) {
-            $container->setParameter('invit_nexmo.auth.api_secret', $config['auth']['api_secret']);
+        if (isset($config['auth']['auth_token'])) {
+            $container->setParameter('invit_plivo.auth.auth_token', $config['auth']['auth_token']);
         }
     }
 }
