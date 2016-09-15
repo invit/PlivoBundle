@@ -1,0 +1,14 @@
+parameters:
+  invit_plivo.class: Plivo\RestAPI
+
+services:
+  invit.plivo:
+    class: %invit_plivo.class%
+    arguments:
+      - %invit_plivo.auth.auth_id%
+      - %invit_plivo.auth.auth_token%
+
+  invit.plivo.helper:
+    class: Invit\PlivoBundle\Helper\PlivoHelper
+    arguments:
+      - %invit_plivo.auth.auth_token%
