@@ -1,6 +1,6 @@
 # Plivo bundle
 
-This bundle creates a wrapper service for the official Plivo PHP helper library
+This bundle creates a Symfony wrapper service for the official Plivo PHP helper library
 
 ## Installation
 
