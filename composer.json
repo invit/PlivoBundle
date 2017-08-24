@@ -7,16 +7,10 @@
             "email": "toni.rudolf@weekend4two.com"
         }
     ],
-    "minimum-stability": "dev",    
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/hashtd/plivo-php.git"
-        }
-    ],
+    "minimum-stability": "stable",
     "require": {
         "php": ">= 5.3",
-        "plivo/plivo-php": "dev-master"
+        "plivo/plivo-php": "^1.1.7"
     },
     "autoload": {
         "psr-0": {
