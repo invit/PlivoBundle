@@ -2,6 +2,7 @@
     "name": "invit/plivo-bundle",
     "description": "Plivo PHP library service bundle",
     "homepage" : "https://github.com/invit/PlivoBundle",
+    "license": "MIT",
     "authors": [
         {
             "name": "Toni Rudolf",
