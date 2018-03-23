@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Invit\PlivoBundle\Helper;
 
-use Invit\PlivoBundle\Service\PlivoApi;
+use Plivo\Util\signatureValidation;
 use Symfony\Component\HttpFoundation\Request;
 
 class PlivoHelper
@@ -17,10 +17,10 @@ class PlivoHelper
 
     public function validateRequest(Request $request) : bool
     {
-        return PlivoApi::validate_signature(
+        return signatureValidation::validateSignature(
             $request->getUri(),
-            $request->request->all(),
-            $request->headers->get('X-Plivo-Signature'),
+            $request->headers->get('X-Plivo-Signature-V2-Nonce'),
+            $request->headers->get('X-Plivo-Signature-V2'),
             $this->authToken
         );
     }
