@@ -36,11 +36,13 @@ invit_plivo:
 ## Example
 
 ```php
-$this->get('invit.plivo')->play([
-    'call_uuid' => 'cf5fe5ff-9952-yyyy-xxxx-b75ff490ffff',
-    'urls' => 'https://s3-eu-west-1.amazonaws.com/waitsongbucket/wait.mp3',
-    'loop' => 'true',
-    'mix' => 'false',
-    'legs' => 'both'
-]);
+$this->get(PlivoApi::class)->getCalls()->play(
+    'cf5fe5ff-9952-yyyy-xxxx-b75ff490ffff', 
+    ['https://s3-eu-west-1.amazonaws.com/waitsongbucket/wait.mp3'], 
+    [
+        'loop' => 'true',
+        'mix' => 'false',
+        'legs' => 'both',
+    ]
+);
 ```
