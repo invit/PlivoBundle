@@ -12,10 +12,10 @@
     "minimum-stability": "stable",
     "require": {
         "php": "^7.1",
-        "symfony/dependency-injection": "^3.4 | ^4.1",
-        "symfony/http-foundation": "^3.4 | ^4.1",
-        "symfony/http-kernel": "^3.4 | ^4.1",
-        "symfony/config": "^3.4 | ^4.1",
+        "symfony/dependency-injection": "^3.4 | ^4.1 | ^5.0",
+        "symfony/http-foundation": "^3.4 | ^4.1 | ^5.0",
+        "symfony/http-kernel": "^3.4 | ^4.1 | ^5.0",
+        "symfony/config": "^3.4 | ^4.1 | ^5.0",
         "plivo/php-sdk": "^4.0"
     },
     "autoload": {
