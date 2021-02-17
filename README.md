@@ -8,25 +8,22 @@ This bundle creates a Symfony wrapper service for the official Plivo PHP helper 
 composer require invit/plivo-bundle
 ```
 
-Also, enable the bundle in the kernel:
+Also, enable the bundle in bundles.php:
 
 ``` php
 <?php
-// app/AppKernel.php
+// config/bundles.php
 
-public function registerBundles()
-{
-    $bundles = array(
-        // ...
-        new Invit\PlivoBundle\InvitPlivoBundle(),
-    );
-}
+return [
+    ...
+    Invit\PlivoBundle\InvitPlivoBundle::class => ['all' => true],
+    ...
+];
 ```
 
 Configure the application with the credentials you find on the [plivo dashboard](https://manage.plivo.com/dashboard/).
 
 ``` yaml
-// app/config/config.yml:
 invit_plivo:
     auth:
         auth_id:      "xxxxx"
