@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 class PlivoHelper
 {
-    private $authToken;
+    private string $authToken;
 
     public function __construct(string $authToken)
     {
