@@ -1,11 +1,9 @@
 services:
   Invit\PlivoBundle\Service\PlivoApi:
-    public: true
     arguments:
       - '%invit_plivo.auth.auth_id%'
       - '%invit_plivo.auth.auth_token%'
 
   Invit\PlivoBundle\Helper\PlivoHelper:
-    public: true
     arguments:
       - '%invit_plivo.auth.auth_token%'
