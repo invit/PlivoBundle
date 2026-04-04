@@ -1,26 +1,26 @@
 {
-    "name": "invit/plivo-bundle",
-    "description": "Plivo PHP library service bundle",
-    "homepage" : "https://github.com/invit/PlivoBundle",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Toni Rudolf",
-            "email": "toni.rudolf@gmail.com"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require": {
-        "php": "^7.4|^8.0",
-        "symfony/dependency-injection": "^5.0|^6.0|^7.0",
-        "symfony/http-foundation": "^5.0|^6.0|^7.0",
-        "symfony/http-kernel": "^5.0|^6.0|^7.0",
-        "symfony/config": "^5.0|^6.0|^7.0",
-        "plivo/php-sdk": "^4.0"
-    },
-    "autoload": {
-        "psr-0": {
-            "Invit\\PlivoBundle\\": "src/"
-        }
+  "name": "invit/plivo-bundle",
+  "description": "Plivo PHP library service bundle",
+  "homepage": "https://github.com/invit/PlivoBundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Toni Rudolf",
+      "email": "toni.rudolf@gmail.com"
     }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^8.2",
+    "symfony/dependency-injection": "^7.0|^8.0",
+    "symfony/http-foundation": "^7.0|^8.0",
+    "symfony/http-kernel": "^7.0|^8.0",
+    "symfony/config": "^7.0|^8.0",
+    "plivo/php-sdk": "^4.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "Invit\\PlivoBundle\\": "src/"
+    }
+  }
 }

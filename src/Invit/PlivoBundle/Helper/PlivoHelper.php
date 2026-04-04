@@ -15,7 +15,7 @@ class PlivoHelper
         $this->authToken = $authToken;
     }
 
-    public function validateRequest(Request $request) : bool
+    public function validateRequest(Request $request): bool
     {
         return signatureValidation::validateSignature(
             $request->getUri(),
